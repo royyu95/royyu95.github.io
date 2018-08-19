@@ -1,0 +1,4 @@
+  File "test123.py", line 1
+    !#D:/python3.7/python
+    ^
+SyntaxError: invalid syntax

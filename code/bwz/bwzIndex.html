@@ -1,0 +1,179 @@
+
+<html>
+    <head>
+	<script language="javascript">
+function FormCheck() {
+  	if(uploadForm.FILE.value.length == 0 && uploadForm.txtContent.value.length == 0){  	
+    	alert("Please Paste protein sequence or submit a file!");
+    	return false;
+    }      
+}
+</script>
+<style type="text/css">
+	body {
+	background-color: #99cccc;
+	face: Times;
+}
+.style22 {	font-size: medium;
+	font-weight: bold;
+}
+.style6 {font-family: "Times New Roman", Times, serif; font-size: large; }
+    .style24 {font-size: x-large}
+    .style26 {
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+    .style28 {font-size: large; font-family: Arial, Helvetica, sans-serif; }
+    .style31 {font-family: Arial, Helvetica, sans-serif}
+    .style32 {font-size: 22px; font-family: Arial, Helvetica, sans-serif; }
+    .style33 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+    .style34 {font-size: 28px; font-family: Arial, Helvetica, sans-serif; }
+    .style36 {
+	font-size: 18px;
+	font-style: italic;
+}
+    .style37 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+}
+    .style38 {font-size: 9px}
+    .style40 {font-size: 16px; font-style: italic; }
+    .style19 {	font-size: 22px;
+	font-weight: bold;
+}
+    </style>
+</head>
+<body>
+	<div id="content">
+
+		<div class="introduction_third">		  
+		  <div align="center" class="style33"> 
+		    <h1 class="style34">
+	        <span class="style34">iSNO-PseAAC: Predict cysteine S-nitrosylation sites in proteins by incorporating <BR>position specific amino acid propensity into pseudo amino acid composition </span> </h1>
+	      </div>
+<div class="text">
+			<form method="post" action="result.php"  enctype="multipart/form-data"  onSubmit="return FormCheck()"
+                
+                <hr width="630"></hr>
+				<table width="321" align="center">
+				
+                  <tbody>
+                    <tr>
+                      <td width="313" height="28" class="style6"><div align="justify">
+                          <p class="style22">  <span class="style24">|</span> </span><span class="style26"><a href="bwzReadMe.html" >Read Me</a></span> <span class="style24">|</span> </span><span class="style31"><a href="bwzdata.html"  class="style26"> Data</a></span><span class="style24"> |</span> <a href="bwzCitation.html" class="style26">Citation</a> <span class="style24">|</span> </p>
+                      </div></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <hr width="90%" />
+				<table align=center>
+				
+				
+				
+				</table>
+        
+		
+		<table align=center>
+		<tr><td>
+		  
+                
+            <p><b>length:</b> &nbsp; &nbsp; &nbsp; &nbsp; 
+             <select name='length'>  
+               <option value="2">2</option>  
+               <option value="3">3</option>  
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>		
+               <option value="11">11</option>
+               <option value="12">12</option>
+               <option value="13">13</option>
+               <option value="14">14</option>
+               <option value="15">15</option>
+               <option value="16">16</option>
+               <option value="17">17</option>
+               <option value="18">18</option>
+               <option value="19">19</option>
+               <option value="20">20</option>			   
+             </select>  
+            </p>  
+        
+		</td></tr>
+		<br>
+		<tr><td>
+		  
+                
+            <p><b>amino acid:</b>  
+             <select name='ans'>  
+               <option value="A">A</option>  
+               <option value="C">C</option>  
+               <option value="D">D</option>
+               <option value="E">E</option> 
+               <option value="F">F</option> 
+               <option value="G">G</option> 
+               <option value="H">H</option> 
+               <option value="I">I</option> 
+               <option value="K">K</option> 
+               <option value="L">L</option> 
+               <option value="M">M</option> 
+               <option value="N">N</option> 
+               <option value="P">P</option> 
+               <option value="Q">Q</option> 
+               <option value="R">R</option> 
+               <option value="S">S</option> 
+               <option value="T">T</option> 
+               <option value="V">V</option> 
+               <option value="W">W</option> 
+               <option value="Y">Y</option> 			   
+             </select>  
+            </p>  
+			
+        
+		</td></tr>
+		</table>
+		
+				<hr width="90%" />
+				<table align=center>
+				<tr><td>
+                <p class="style32">Enter or copy/paste query protein sequences in <font color="Red">FASTA</font> format <a href="bwzExample.html" >(Example)</a>:</p>
+				</td></tr>
+				<tr><td>
+                <p align=center  >
+                  <textarea name="Seqe" cols="66" style="width: 550px; height: 200px;"></textarea>
+                </p>
+				</td></tr>
+				<td>
+				<BR><BR><BR>
+			<p align=center>
+                  <input name="B1" type="submit" class="style32" value="Submit" />
+                   <input name="B2" type="reset" class="style32" value="Clear" />
+				   </p>
+				   </td></tr>
+				</table>
+
+				<hr width="90%" />
+									  
+  
+            </form>
+			
+		  </div>
+		    
+	  </div>
+
+	  </div>	
+	</div>
+
+			
+			
+    </body>
+
+</html>
+
+
